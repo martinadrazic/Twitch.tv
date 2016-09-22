@@ -1,3 +1,8 @@
 .title {
 	background-color: gray;
 }
+
+#stream {
+	background-color: red;
+	height: 200px;
+}
