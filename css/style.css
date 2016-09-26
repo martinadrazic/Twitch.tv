@@ -36,7 +36,16 @@ body {
 	font-size: 60px;
 }
 
-.status, 
+.status-online {
+	color: #9CFF88;
+}
+
+.status-offline {
+	color: #FE5C5C;
+}
+
+.status-online, 
+.status-offline,
 .drop,
 .activity {
 	margin-bottom: 0px;
@@ -76,6 +85,7 @@ body {
 
 .drop {
     cursor: pointer;
+    font-style: italic;
 }
 
 /* Dropdown button on hover & focus */

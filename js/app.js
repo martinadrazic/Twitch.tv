@@ -34,7 +34,7 @@ function drawRow(name, stream) {
 			'<div class="row streamers">' +
 				'<div class="col-md-4"><a href=" ' + stream.channel.url + ' " target="_blank" class="stream-name">' + name + '</a></div>' +
 				'<div class="col-md-4"> ' +
-					'<p class="status">Online</p>' +
+					'<p class="status-online">Online</p>' +
 				'</div>' +
 				'<div class="col-md-4 dropdown">' +
 					'<p onclick="myFunction(\'' + stream.channel.display_name + '\')" class="drop">Details</p>' +
@@ -55,10 +55,10 @@ function drawRow(name, stream) {
 					'<a href="https://www.twitch.tv/'+ name +'" target="_blank" class="stream-name">' + name + '</a>' +
 				'</div>' +
 				'<div class="col-md-4">' +
-					'<p class="status">Offline</p>' +
+					'<p class="status-offline">Offline</p>' +
 				'</div>' +
 				'<div class="col-md-4">' +
-					'<p class="activity">Not avaible</p>' +
+					'<p class="activity">Not available</p>' +
 				'</div>' +
 			'</div>' +
 			'<div class="delimiter-horizontal"></div>'
