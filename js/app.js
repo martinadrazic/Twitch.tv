@@ -58,7 +58,7 @@ function drawRow(name, stream) {
 					'<p class="status">Offline</p>' +
 				'</div>' +
 				'<div class="col-md-4">' +
-					'<p class="activiti">Undefined</p>' +
+					'<p class="activity">Not avaible</p>' +
 				'</div>' +
 			'</div>' +
 			'<div class="delimiter-horizontal"></div>'
