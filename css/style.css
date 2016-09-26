@@ -36,13 +36,13 @@ body {
 	font-size: 60px;
 }
 
-.status-online {
+/*.status-online {
 	color: #9CFF88;
 }
 
 .status-offline {
 	color: #FE5C5C;
-}
+}*/
 
 .status-online, 
 .status-offline,
