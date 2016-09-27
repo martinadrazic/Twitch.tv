@@ -16,14 +16,14 @@ body {
 }
 
 .delimiter-vertical {
-	border-left: 1px solid #DDDDDD;
+	border-left: 1px solid #F2F2F2;
 	padding-left: 30px;
 }
 
 .delimiter-horizontal {
 	width: 72%;
     height: 1px;
-    background-color: #DDDDDD;
+    background-color: #F2F2F2;
 }
 
 .title {
@@ -32,7 +32,7 @@ body {
 }
 
 .title h1 {
-	color: #DDDDDD;
+	color: #F2F2F2;
 	font-size: 60px;
 }
 
@@ -44,7 +44,7 @@ body {
 
 .streamers {
 	font-size: 16px;
-	color: #DDDDDD;
+	color: #F2F2F2;
 	margin: 10px 0px;
 }
 
@@ -56,7 +56,7 @@ body {
 
 .stream-name {
 	text-align: center;
-    color: #DDDDDD;
+    color: #F2F2F2;
     font-size: 25px;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 .about {
-	color: #DDDDDD;
+	color: #F2F2F2;
 	text-align: center;
 	margin-top: 35px;
 }
