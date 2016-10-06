@@ -9,7 +9,6 @@ $.getJSON("https://api.twitch.tv/kraken/streams?channel=" + streamString + "&cli
 	compare(stream, json);
 });
 
-
 function compare(stream, json) {
 	for (var i = 0; i < stream.length; i++) {
 		res[stream[i]] = getStream(json.streams, stream[i]);
@@ -17,7 +16,6 @@ function compare(stream, json) {
 	}
 	console.log(res);
 }
-
 
 function getStream(list, name) {
 	for (var i = 0; i < list.length; i++) {
@@ -27,17 +25,16 @@ function getStream(list, name) {
 	}
 }
 
-
 function drawRow(name, stream) {
 	if (stream) {
 		var content =
 			'<div class="row streamers">' +
-			'<div class="col-md-4"><a href=" ' + stream.channel.url + ' " target="_blank" class="stream-name">' + name + '</a></div>' +
+			'<div class="col-md-4"><a href=" ' + stream.channel.url + ' " target="_blank" class="stream-name color-f2">' + name + '</a></div>' +
 			'<div class="col-md-4"> ' +
-			'<p class="status">Online</p>' +
+			'<p class="status color-f2">Online</p>' +
 			'</div>' +
 			'<div class="col-md-4 dropdown">' +
-			'<p onclick="myFunction(\'' + stream.channel.display_name + '\')" class="drop">Details</p>' +
+			'<p onclick="myFunction(\'' + stream.channel.display_name + '\')" class="drop color-f2">> Details</p>' +
 			'<div id="myDropdown-' + stream.channel.display_name + '" class="dropdown-content">' +
 			'<p>Display name:</p><span> ' + stream.channel.display_name + '</span>' +
 			'<p>Game:</p><span> ' + stream.channel.game + ' </span>' +
@@ -51,20 +48,19 @@ function drawRow(name, stream) {
 		var content =
 			'<div class="row streamers">' +
 			'<div class="col-md-4">' +
-			'<a href="https://www.twitch.tv/' + name + '" target="_blank" class="stream-name">' + name + '</a>' +
+			'<a href="https://www.twitch.tv/' + name + '" target="_blank" class="stream-name color-f2">' + name + '</a>' +
 			'</div>' +
 			'<div class="col-md-4">' +
-			'<p class="status">Offline</p>' +
+			'<p class="status color-f2">Offline</p>' +
 			'</div>' +
 			'<div class="col-md-4">' +
-			'<p class="activity">Not available</p>' +
+			'<p class="activity color-f2">Not available</p>' +
 			'</div>' +
 			'</div>' +
 			'<div class="delimiter-horizontal"></div>'
 	}
 	container.innerHTML += content;
 }
-
 
 function myFunction(name) {
 	document.getElementById("myDropdown-" + name).classList.toggle("show");
